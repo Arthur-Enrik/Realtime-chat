@@ -1,0 +1,156 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  transition: 300ms;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  background-color: #3b3b3b;
+}
+
+main {
+  overflow-y: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.2rem;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  padding-bottom: 5rem;
+}
+
+#login-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#login-container {
+  border-radius: 10px;
+  background-color: #2c2c2c;
+  width: 20%;
+  min-width: 400px;
+  min-height: 300px;
+  height: 20%;
+}
+
+#login-container > h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  color: #f2f2f2;
+  font-size: xx-large;
+}
+
+#login-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+#login-form > input {
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 10px;
+  border: 0;
+  background-color: #1a1919;
+  color: #f2f2f2;
+}
+
+#login-form > button {
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 0;
+  background-color: #1a1919;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+#login-form > button:hover {
+  background-color: #353535;
+  color: #a8a4a4;
+}
+
+.messages {
+  position: relative;
+  width: fit-content;
+  max-width: 40%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.self-nessage {
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+  background-color: #f2f2f2;
+}
+
+.other-nessage {
+  align-self: flex-start;
+  border-top-left-radius: 0;
+  padding: 0.1rem 0.5rem 0.5rem 0.5rem;
+  background-color: #5f5f5f;
+  color: #f2f2f2;
+}
+
+.message-author {
+  color: greenyellow;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#form-section {
+  display: none;
+  align-items: center;
+  gap: 0.2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #272727;
+  height: 10%;
+  max-height: 70px;
+  min-height: 50px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#form-section > button {
+  border: 0;
+  border-radius: 10px;
+  color: #f2f2f2;
+  background-color: #1a1919;
+  width: 70px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+#form-section > button:hover {
+  background-color: #2e2d2d;
+}
+
+#form-section > button:active {
+  background-color: #f2f2f2;
+  color: #5f5f5f;
+}
+
+#form-section > input {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  background-color: #1a1919;
+  color: #f2f2f2;
+}
