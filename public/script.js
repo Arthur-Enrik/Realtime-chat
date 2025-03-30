@@ -30,7 +30,7 @@ const processMessageToSend = (message, callback) => {
 
 const getMessages = async () => {
   try {
-    const res = await fetch('http://localhost:3000/api/history');
+    const res = await fetch('/api/history');
     if (!res.ok) return;
     const data = await res.json();
     renderRequestedMessages(data);
